@@ -1,0 +1,41 @@
+.background{
+    background-color: #1d1d1d
+}
+.dev{
+    color:#6ACBFF;
+    font-style:italic;
+    text-align: left;
+
+}
+.good{
+    color:#6ACBFF;
+    font-style:italic;
+    text-align: center;
+    text-decoration: underline;
+
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+p{
+    font-family: arial;
+    color:white;
+    text-align: center;
+}
+img {
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+}
+a{
+    font-family: arial;
+    color:#6ACBFF;  
+}
