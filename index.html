@@ -1,28 +1,333 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Santiago Cisneros</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body class="background">
-        <h4 class="dev">santiagocisneros.exe</h4>
-        <h1>Soy <br>
-        <span class="good">Santiago Cisneros</span></h1>
-        <img src="\imagenes\perfil.png" alt="foto de un perro">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p><span class="parrafo_enlace"> aprendiendo con un curso de youtube 😱</p>
-        <a class="parrafo_enlace" href="p1.html">ir a la pagina 1</a>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>setlync — a quieter inbox</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+<div class="page">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a class="nav-brand" href="#top">
+      <img src="assets/logo-mark.svg" alt="" width="22" height="22" />
+      <span>setlync</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="#how">How it works</a>
+      <a class="nav-link" href="#example">Example</a>
+      <a class="nav-link" href="#faq">FAQ</a>
+    </div>
+    <button class="nav-cta" id="nav-cta">Get in touch</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="shapes-layer" aria-hidden="true">
+      <div class="shape blue s1"></div>
+      <div class="shape warm s2"></div>
+      <div class="shape white s3"></div>
+      <div class="shape cyan s4"></div>
+    </div>
+
+    <div class="hero-inner">
+      <span class="badge fade-up">
+        <span class="badge-dot"></span>
+        For wedding &amp; event photographers
+      </span>
+
+      <h1 class="hero-title fade-up d1">
+        <span class="line-1">A quieter inbox.</span>
+        <span class="gtxt">Drafts ready when you wake up.</span>
+      </h1>
+
+      <p class="hero-lead fade-up d2">
+        Setlync reads each new booking inquiry, pulls the details that matter, and prepares a reply for you to review. Nothing is sent until you say so.
+      </p>
+
+      <div class="hero-ctas fade-up d3">
+        <button class="btn btn-primary" id="hero-cta">
+          Get in touch
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="7 7 17 7 17 17"/>
+          </svg>
+        </button>
+        <button class="btn btn-secondary" id="hero-example">See an example</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-fade" id="how">
+    <div class="section-inner">
+      <span class="eyebrow">How it works</span>
+      <h2 class="section-title">Three steps, one of them yours.</h2>
+      <p class="section-lead">The first two happen quietly in the background. The third is the only one that matters.</p>
+
+      <div class="steps">
+        <article class="step">
+          <span class="step-num">01</span>
+          <h3 class="step-title">Read</h3>
+          <p class="step-body">An inquiry lands in your inbox or contact form. Setlync reads it once, end to end, and pulls the date, venue, headcount, and anything else worth knowing.</p>
+        </article>
+        <article class="step">
+          <span class="step-num">02</span>
+          <h3 class="step-title">Draft</h3>
+          <p class="step-body">A reply is prepared in your voice. Missing details are flagged in the margin. Conflicting dates raise their hand.</p>
+        </article>
+        <article class="step">
+          <span class="step-num">03</span>
+          <h3 class="step-title">Review</h3>
+          <p class="step-body">You see the draft. Edit, send, or ignore. Nothing leaves your account without you. You stay the photographer your couples chose.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALERT MOCKUP -->
+  <section class="section alert-section section-fade" id="example">
+    <div class="section-inner alert-wrap">
+      <div class="alert-copy">
+        <span class="eyebrow">An example</span>
+        <h2 class="section-title">This is what lands in your queue.</h2>
+        <p class="section-lead" style="margin-bottom:0">
+          A booking inquiry came in at 2:14am. The system read it, pulled the date and venue, flagged the missing coverage hours, and parked a draft. Nothing was sent. You'll see it when you wake up.
+        </p>
+      </div>
+
+      <div class="alert-stack">
+        <div class="alert">
+          <div class="alert-head">
+            <span class="alert-pill">
+              <span class="dot"></span>
+              Draft ready
+            </span>
+            <span class="alert-ts">received 2:14am &middot; today</span>
+          </div>
+          <h3 class="alert-title">Mariana — September wedding inquiry</h3>
+          <p class="alert-sub">via contact form &middot; mariana.k@gmail.com</p>
+
+          <div class="alert-extract">
+            <span class="k">Date</span>    <span class="v">Sep 14, 2026 &middot; Sat</span>
+            <span class="k">Venue</span>   <span class="v">Botanical Garden, Brooklyn</span>
+            <span class="k">Guests</span>  <span class="v">~120</span>
+            <span class="k">Coverage</span><span class="v miss">— not specified</span>
+            <span class="k">Budget</span>  <span class="v">$5–7k</span>
+          </div>
+
+          <div class="alert-actions">
+            <button class="btn btn-primary">Review draft</button>
+            <button class="btn btn-secondary">Open thread</button>
+          </div>
+        </div>
+
+        <div class="alert-draft">
+          <span class="draft-label">Suggested reply &middot; in your voice</span>
+          <p>Hi Mariana — thanks for reaching out. September 14 is open, and the Botanical Garden is one of my favorite venues. Before I put a quote together, could you let me know <span class="hl">how many hours of coverage</span> you're hoping for? Once I have that I'll send a full breakdown and we can set a call.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISE -->
+  <section class="promise section-fade">
+    <div class="section-inner">
+      <span class="eyebrow" style="justify-content:center">The line we don't cross</span>
+      <h2>
+        Nothing gets sent to clients <span class="gtxt">automatically.</span>
+      </h2>
+      <p>
+        Every reply waits for your signature. The system drafts and queues. You read, edit, and send. Your couples are talking to you — they should keep talking to you.
+      </p>
+    </div>
+  </section>
+
+  <!-- WHO FOR -->
+  <section class="section section-fade">
+    <div class="section-inner">
+      <span class="eyebrow">Who it's for</span>
+      <h2 class="section-title">Built for one person at a desk.</h2>
+      <p class="section-lead">Not a sales team. Not a marketing org. You, the inbox, and the next bride trying to find out if you're free on the 14th.</p>
+
+      <div class="who-grid">
+        <div class="who-item">
+          <span class="who-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+              <circle cx="12" cy="13" r="4"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Solo wedding photographers</h4>
+            <p>Two to forty weddings a year. Inquiries that pile up between shoots and edits.</p>
+          </div>
+        </div>
+        <div class="who-item">
+          <span class="who-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Event &amp; portrait studios</h4>
+            <p>Small teams that share an inbox. Replies that need to sound like a person, not a form.</p>
+          </div>
+        </div>
+        <div class="who-item">
+          <span class="who-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/>
+              <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Booking-by-form businesses</h4>
+            <p>Anyone whose first conversation starts with a contact form and ends in a contract.</p>
+          </div>
+        </div>
+        <div class="who-item">
+          <span class="who-ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </span>
+          <div>
+            <h4>People who answer at 11pm</h4>
+            <p>If you've ever replied to a lead from bed, this was built for you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-fade" id="faq">
+    <div class="section-narrow">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title">Things people ask first.</h2>
+
+      <div class="faq-list" id="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="true">
+            <span>Will my clients know they're talking to a system?</span>
+            <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </button>
+          <div class="faq-a open">No. Nothing is sent automatically — every reply waits for you. Drafts are written to sound like you, not like a template. The only person your client hears from is you.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Does this connect to my existing inbox or contact form?</span>
+            <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </button>
+          <div class="faq-a">Yes. Setlync watches whatever channel new inquiries already arrive on — your Gmail, a Squarespace form, HoneyBook, your own contact form. No new tools for clients to learn.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>How does it learn my voice?</span>
+            <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </button>
+          <div class="faq-a">I read a handful of your past replies during setup and we calibrate together over a couple of cycles. You'll see the first few drafts and tell me where they're off. After that it sounds like you.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>What if a draft is wrong?</span>
+            <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </button>
+          <div class="faq-a">Edit it like any email. Ignore it. Delete it. The draft is a starting point, not a decision. Nothing has been sent to the client.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>What does it cost?</span>
+            <svg class="faq-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </button>
+          <div class="faq-a">It's a fixed monthly fee per inbox, with a one-time setup. I'd rather quote it after a 20-minute call so the number fits the volume you actually get.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section section-fade" id="contact">
+    <div class="contact-glow" aria-hidden="true"></div>
+    <div class="contact-wrap">
+      <span class="eyebrow">Get in touch</span>
+      <h2 class="section-title">Let's see if it fits.</h2>
+      <p class="section-lead">
+        A 20-minute call. Bring your last three inquiry threads if you can. I'll show you what setlync would have done with each.
+      </p>
+
+      <div class="form">
+        <div class="form-fields" id="form-fields">
+          <form id="contact-form" style="display:flex;flex-direction:column;gap:16px">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" class="form-input" placeholder="Alex Harlow" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" type="email" class="form-input" placeholder="alex@harlowstudio.com" required />
+            </div>
+            <div class="form-row">
+              <label for="studio">Studio &amp; volume</label>
+              <input id="studio" class="form-input" placeholder="Harlow Studio · ~20 weddings / year" />
+            </div>
+            <div class="form-row">
+              <label for="message">Anything else</label>
+              <textarea id="message" class="form-textarea" placeholder="Where do inquiries come in today? What's slowest?"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">
+              Send
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="form-success" id="form-success">
+          <div class="form-success-ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h4>Got it. I'll reply within 24 hours.</h4>
+          <p>From a real inbox — not an autoresponder.</p>
+          <button class="btn btn-ghost" id="form-reset" style="margin-top:20px">Send another</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="#top">
+        <img src="assets/logo-mark.svg" alt="" width="22" height="22" />
+        <span>setlync</span>
+      </a>
+      <span class="footer-copy">Built and supported by one person. &copy; 2026.</span>
+      <a class="footer-mail" href="mailto:hello@setlync.com">hello@setlync.com</a>
+    </div>
+  </footer>
+
+</div>
+<script src="main.js"></script>
+</body>
 </html>
